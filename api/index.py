@@ -12,14 +12,7 @@ def default():
 @app.route('/loginpage')
 def loginpage():
     return '''
-        <h1>velkomen til login</h1>
-        <form>
-            <input>Brukernavn</input> <br/>
-            <input>Passord</input> <br />
-            <button onclick="hei()"><a href="result">hei</a></button>
-            <button onclick="hei()">Hei</button>
-        </form>
-
+        <!DOCTYPE html>
         <script>
             funtion hei() {
                 //login
@@ -27,6 +20,18 @@ def loginpage():
                 //window.location.href = "https://vg.no";
             }
         </script>
+        
+        <html>
+            <body>
+                <h1>velkomen til login</h1>
+                <form>
+                    <input>Brukernavn</input> <br/>
+                    <input>Passord</input> <br />
+                    <button onclick="hei()"><a href="result">hei</a></button>
+                    <button onclick="hei()">Hei</button>
+                </form>
+            </body>
+        </html>
     '''
 
 @app.route('/result')
