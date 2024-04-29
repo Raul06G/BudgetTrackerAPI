@@ -27,7 +27,7 @@ def loginpage():
                 <form>
                     <input>Brukernavn</input> <br/>
                     <input>Passord</input> <br />
-                    <button onclick="hei()"><a href="result">hei</a></button>
+                    <button onclick="confirm()"><a href="result">hei</a></button>
                     <button onclick="hei()">Hei</button>
                 </form>
             </body>
